@@ -6,11 +6,24 @@
     "scripts": {
         "start": "nodemon backend/server.js"
     },
-    "author": "tom riddle",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Adityamaurya123uma/Guftagu.git"
+    },
+    "author": "aditya maurya",
     "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Adityamaurya123uma/Guftagu/issues"
+    },
+    "homepage": "https://github.com/Adityamaurya123uma/Guftagu#readme",
     "dependencies": {
-        "dotenv": "^16.0.1",
+        "bcryptjs": "^2.4.3",
+        "colors": "^1.4.0",
+        "dotenv": "^16.0.2",
         "express": "^4.18.1",
-        "nodemon": "^2.0.18"
+        "express-async-handler": "^1.2.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.6.0",
+        "nodemon": "^2.0.19"
     }
 }

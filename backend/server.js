@@ -1,32 +1,30 @@
-// importing express js
 const express = require("express");
-//importing chats data api
-const { chats } = require("./data/data");
-//importing dotenv package for .env file 
 const dotenv = require("dotenv");
+const { chats } = require("./data/data");
+const connectDB = require("./config/db");
+const colors = require("colors");
+const userRoutes = require("./routes/userRoutes")
+const chatRoutes = require("./routes/chatRoutes")
+const { notFound, errorHandler } = require("./middleware/errorMiddleware")
 
 dotenv.config();
 
-//creating an instance of exrpess 
+connectDB();
+
 const app = express();
 
-//creating and custom API
-app.get('/', (req, res) => {
-    res.send("API is Running successfully");
+app.use(express.json());
+
+
+app.get("/", (req, res) => {
+    res.send("API is running successfully");
 })
 
-app.get("/api/chat", (req, res) => {
-    res.send(chats);
-})
+app.use("/api/user", userRoutes);
+app.use("/api/chat", chatRoutes);
+app.use(notFound);
+app.use(errorHandler);
 
-app.get("/api/chat/:id", (req, res) => {
-    console.log(req.params.id);
-    const singleChat = chats.find((c) => c._id === req.params.id);
-    res.send(singleChat);
-})
+const PORT = process.env.PORT || 5000;
 
-//creating port variable and assigning port number to it
-const PORT = process.env.PORT || 5000
-
-//creating your own server for the application
-app.listen(PORT, console.log(`server started on port ${PORT}`));
+app.listen(PORT, console.log(`server on ${PORT}`.grey.bold));

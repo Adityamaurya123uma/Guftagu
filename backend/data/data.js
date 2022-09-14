@@ -5,8 +5,8 @@ const chats = [{
                 email: "john@example.com",
             },
             {
-                name: "tomriddle",
-                email: "tomriddle@example.com",
+                name: "Piyush",
+                email: "piyush@example.com",
             },
         ],
         _id: "617a077e18c25468bc7c4dd4",
@@ -19,8 +19,8 @@ const chats = [{
                 email: "guest@example.com",
             },
             {
-                name: "tomriddle",
-                email: "tomriddle@example.com",
+                name: "Piyush",
+                email: "piyush@example.com",
             },
         ],
         _id: "617a077e18c25468b27c4dd4",
@@ -33,8 +33,8 @@ const chats = [{
                 email: "anthony@example.com",
             },
             {
-                name: "tomriddle",
-                email: "tomriddle@example.com",
+                name: "Piyush",
+                email: "piyush@example.com",
             },
         ],
         _id: "617a077e18c2d468bc7c4dd4",
@@ -47,8 +47,8 @@ const chats = [{
                 email: "jon@example.com",
             },
             {
-                name: "tomriddle",
-                email: "tomriddle@example.com",
+                name: "Piyush",
+                email: "piyush@example.com",
             },
             {
                 name: "Guest User",
@@ -69,8 +69,8 @@ const chats = [{
                 email: "jane@example.com",
             },
             {
-                name: "tomriddle",
-                email: "tomriddle@example.com",
+                name: "Piyush",
+                email: "piyush@example.com",
             },
         ],
         _id: "617a077e18c25468bc7cfdd4",
@@ -83,8 +83,8 @@ const chats = [{
                 email: "jon@example.com",
             },
             {
-                name: "tomriddle",
-                email: "tomriddle@example.com",
+                name: "Piyush",
+                email: "piyush@example.com",
             },
             {
                 name: "Guest User",
@@ -100,4 +100,4 @@ const chats = [{
     },
 ];
 
-module.exports = { chats };
+module.exports = { chats }

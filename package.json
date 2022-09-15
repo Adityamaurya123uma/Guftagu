@@ -24,6 +24,8 @@
         "express-async-handler": "^1.2.0",
         "jsonwebtoken": "^8.5.1",
         "mongoose": "^6.6.0",
-        "nodemon": "^2.0.19"
+        "nodemon": "^2.0.19",
+        "react-notification-badge": "^1.5.1",
+        "socket.io": "^4.5.2"
     }
 }
